@@ -1,0 +1,24 @@
+BATCHCHECK - START HERE
+=======================
+
+If you can see THIS file, you are in the right folder.
+The same folder must also contain: package.json, index.html, src (folder).
+If you do NOT see package.json next to this file, open the folder inside this one.
+
+RUN ON YOUR PC (Windows 11)
+1. Install Node.js LTS from https://nodejs.org (once).
+2. In this folder, click the File Explorer address bar, type  cmd  and press Enter.
+3. Type:  npm install     (wait about a minute)
+4. Type:  npm run dev     then open the http://localhost:5173 address it prints.
+
+DEPLOY ON VERCEL (exact settings)
+  Framework Preset ....... Vite
+  Root Directory ......... the folder that contains package.json
+                           (leave as "./" if package.json is at the top of your repository)
+  Build Command .......... npm run build
+  Output Directory ....... dist
+  Install Command ........ npm install
+  Node.js Version ........ 20.x or 22.x
+  Environment Variables .. none needed
+
+Full instructions are in README.md.
